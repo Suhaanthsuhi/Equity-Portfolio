@@ -24,3 +24,8 @@ This is an **Equity Portfolio** application developed using **React Native**. Th
 4. **Start the development server**
    ```bash
    npx expo start -c
+
+---
+
+## Video
+https://github.com/user-attachments/assets/051b7b7b-3fde-4ed8-b16d-afffd8dc1ab1
