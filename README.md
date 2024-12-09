@@ -18,9 +18,9 @@ This is an **Equity Portfolio** application developed using **React Native**. Th
    cd Equity-Portfolio
 
 2. **Install dependencies**
-3. ```bash
+   ```bash
    npm install
    
 4. **Start the development server**
-5. ```bash
+   ```bash
    npx expo start -c
