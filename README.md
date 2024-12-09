@@ -17,7 +17,11 @@ This is an **Equity Portfolio** application developed using **React Native**. Th
    git clone https://github.com/Suhaanthsuhi/Equity-Portfolio.git
    cd Equity-Portfolio
 
-2. **Install dependencies**
+2. **Install expo**
+   ```bash
+   npm install -g expo-cli
+
+3. **Install dependencies**
    ```bash
    npm install
    
