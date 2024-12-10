@@ -41,8 +41,7 @@
           "microphonePermission": "Allow React_Native_Task to access your microphone",
           "recordAudioAndroid": true
         }
-      ],
-      "react-native-pytorch-core"
+      ]
     ],
     "experiments": {
       "typedRoutes": true

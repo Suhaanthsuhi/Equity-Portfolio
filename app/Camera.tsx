@@ -8,8 +8,6 @@ export default function Camera() {
   const [facing, setFacing] = useState<CameraType>("back");
   const [permission, requestPermission] = useCameraPermissions();
   const [photo, setPhoto] = useState<any>(null);
-  const [boundingBoxes, setBoundingBoxes] = useState<any[]>([]); // Store bounding boxes
-  const [classifications, setClassifications] = useState<any[]>([]); // Store classifications
   const cameraRef = useRef<CameraView | null>(null);
 
   if (!permission) {
@@ -65,8 +63,6 @@ export default function Camera() {
   };
 
   const handleRetakePhoto = () => {
-    setBoundingBoxes([]);
-    setClassifications([]);
     setPhoto(null);
   };
 
@@ -74,8 +70,6 @@ export default function Camera() {
     return (
       <PhotoPreviewSection
         photo={photo}
-        boundingBoxes={boundingBoxes} // Pass bounding boxes here
-        classifications={classifications} // Pass classifications here
         handleRetakePhoto={handleRetakePhoto}
       />
     );
