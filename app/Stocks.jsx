@@ -8,7 +8,7 @@ import {
   FlatList,
 } from "react-native";
 import { BlurView } from "expo-blur";
-import { SubscriptionContext } from "./SubscriptionContext"; 
+import { SubscriptionContext } from "./SubscriptionContext";
 
 const Stocks = () => {
   const { subscribed, setSubscribed } = useContext(SubscriptionContext);
@@ -32,12 +32,16 @@ const Stocks = () => {
       <Text style={styles.header}>Stocks</Text>
       <View style={styles.listContainer}>
         {!subscribed && (
-          <BlurView intensity={25} style={styles.blurView}>
+          <BlurView
+            intensity={25}
+            style={styles.blurView}
+            experimentalBlurMethod="gpu"
+          >
             <View style={styles.subscribeContainer}>
-            <Image
-              source={require("../assets/images/lock.jpeg")}
-              style={styles.icon}
-            />
+              <Image
+                source={require("../assets/images/lock.jpeg")}
+                style={styles.icon}
+              />
               <Text style={styles.subscribeText}>
                 Subscribe to see the stocks/ETFs in this portfolio
               </Text>
